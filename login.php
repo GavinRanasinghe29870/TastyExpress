@@ -103,6 +103,24 @@ if(isset($_POST['submit']))
 <input type="password" placeholder="Password" name="password" />
 <input type="submit" id="buttn" name="submit" value="Login" />
 </form>
+
+</div>
+<div style="text-align:center"><a href="admin/index.php">Admin</a></div>
+<div class="cta">Not registered?<a href="registration.php" style="color:#5c4ac7;"> Create an account</a></div>
+</div>
+<script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+ 
+                <div class="container-fluid pt-3">
+<p></p>
+</div>
+ 
+ 
+                <?php include "include/footer.php" ?>
+ 
+ 
+</body>
+ 
+</html>
 has context menu
 has context menu
 has context menu
