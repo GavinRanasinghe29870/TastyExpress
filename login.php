@@ -121,10 +121,3 @@ if(isset($_POST['submit']))
 </body>
  
 </html>
-has context menu
-has context menu
-has context menu
-
-
-has context menu
-Compose
