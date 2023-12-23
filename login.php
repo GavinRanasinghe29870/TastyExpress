@@ -87,6 +87,23 @@ if(isset($_POST['submit']))
 
 }
 ?>
+<div class="pen-title">
+< </div>
+ 
+                <div class="module form-module">
+<div class="toggle">
+ 
+                    </div>
+<div class="form">
+<h2>Login to your account</h2>
+<span style="color:red;"><?php echo $message; ?></span>
+<span style="color:green;"><?php echo $success; ?></span>
+<form action="" method="post">
+<input type="text" placeholder="Username" name="username" />
+<input type="password" placeholder="Password" name="password" />
+<input type="submit" id="buttn" name="submit" value="Login" />
+</form>
+has context menu
 has context menu
 has context menu
 
