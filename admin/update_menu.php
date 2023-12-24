@@ -242,3 +242,35 @@ if(isset($_POST['submit']))
 
 
                                                     <div class="row">
+
+                                                    <div class="col-md-12">
+                                                            <div class="form-group">
+                                                                <label class="control-label">Select Category</label>
+                                                                <select name="res_name" class="form-control custom-select" data-placeholder="Choose a Category" tabindex="1">
+                                                                    <option>--Select Restaurant--</option>
+                                                                    <?php $ssql ="select * from restaurant";
+													$res=mysqli_query($db, $ssql); 
+													while($row=mysqli_fetch_array($res))  
+													{
+                                                       echo' <option value="'.$row['rs_id'].'">'.$row['title'].'</option>';;
+													}  
+                                                 
+													?>
+                                                                </select>
+                                                            </div>
+                                                        </div>
+
+
+
+                                                    </div>
+
+                                                </div>
+                                        </div>
+                                        <div class="form-actions">
+                                            <input type="submit" name="submit" class="btn btn-primary" value="Save">
+                                            <a href="all_menu.php" class="btn btn-inverse">Cancel</a>
+                                        </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
