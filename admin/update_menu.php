@@ -53,3 +53,37 @@ if(isset($_POST['submit']))
 										}
 		
 									else
+                                    {
+												
+												
+												
+				                                 
+                                        $sql = "update dishes set rs_id='$_POST[res_name]',title='$_POST[d_name]',slogan='$_POST[about]',price='$_POST[price]',img='$fnew' where d_id='$_GET[menu_upd]'";
+                                        mysqli_query($db, $sql); 
+                                        move_uploaded_file($temp, $store);
+      
+                                            $success = 	'<div class="alert alert-success alert-dismissible fade show">
+                                                        <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                                        <strong>Record Updated!</strong>
+                                                    </div>';
+        
+
+                                }
+            }
+                          
+
+
+}
+
+
+
+
+
+
+
+}
+
+
+
+
+
