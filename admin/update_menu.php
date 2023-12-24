@@ -176,3 +176,69 @@ if(isset($_POST['submit']))
                             </div>
 
                         </div>
+
+                        <div class="page-wrapper">
+                            <div style="padding-top: 10px;">
+                                </div>
+
+
+
+                            <div class="container-fluid">
+
+
+
+                                <?php  echo $error;
+									        echo $success; ?>
+
+
+
+
+                                <div class="col-lg-12">
+                                    <div class="card card-outline-primary">
+                                        <div class="card-header">
+                                            <h4 class="m-b-0 text-white">Add Menu to Restaurant</h4>
+                                        </div>
+                                        <div class="card-body">
+                                            <form action='' method='post' enctype="multipart/form-data">
+                                                <div class="form-body">
+                                                    <?php $qml ="select * from dishes where d_id='$_GET[menu_upd]'";
+													$rest=mysqli_query($db, $qml); 
+													$roww=mysqli_fetch_array($rest);
+														?>
+                                                    <hr>
+                                                    <div class="row p-t-20">
+                                                        <div class="col-md-6">
+                                                            <div class="form-group">
+                                                                <label class="control-label">Dish Name</label>
+                                                                <input type="text" name="d_name" value="<?php echo $roww['title'];?>" class="form-control" placeholder="Morzirella">
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="col-md-6">
+                                                            <div class="form-group has-danger">
+                                                                <label class="control-label">About</label>
+                                                                <input type="text" name="about" value="<?php echo $roww['slogan'];?>" class="form-control form-control-danger" placeholder="slogan">
+                                                            </div>
+                                                        </div>
+
+                                                    </div>
+
+                                                    <div class="row p-t-20">
+                                                        <div class="col-md-6">
+                                                            <div class="form-group">
+                                                                <label class="control-label">Price </label>
+                                                                <input type="text" name="price" value="<?php echo $roww['price'];?>" class="form-control" placeholder="$">
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="col-md-6">
+                                                            <div class="form-group has-danger">
+                                                                <label class="control-label">Image</label>
+                                                                <input type="file" name="file" id="lastName" class="form-control form-control-danger" placeholder="12n">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+
+
+                                                    <div class="row">
