@@ -87,3 +87,14 @@ CREATE TABLE `users` (
   `status` int(11) NOT NULL DEFAULT 1,
   `date` timestamp NOT NULL DEFAULT current_timestamp() ON UPDATE current_timestamp()
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1 COLLATE=latin1_swedish_ci;
+
+CREATE TABLE `users_orders` (
+  `o_id` int(11) NOT NULL,
+  `u_id` int(11) NOT NULL,
+  `title` varchar(222) NOT NULL,
+  `quantity` int(11) NOT NULL,
+  `price` decimal(10,2) NOT NULL,
+  `status` varchar(222) DEFAULT NULL,
+  `date` timestamp NOT NULL DEFAULT current_timestamp() ON UPDATE current_timestamp()
+) ENGINE=InnoDB DEFAULT CHARSET=latin1 COLLATE=latin1_swedish_ci;
+
