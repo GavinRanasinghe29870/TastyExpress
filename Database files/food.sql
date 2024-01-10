@@ -19,3 +19,6 @@ CREATE TABLE `admin` (
   `code` varchar(222) NOT NULL,
   `date` timestamp NOT NULL DEFAULT current_timestamp() ON UPDATE current_timestamp()
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1 COLLATE=latin1_swedish_ci;
+
+INSERT INTO `admin` (`adm_id`, `username`, `password`, `email`, `code`, `date`) VALUES
+(4, 'admin', 'adminadmin', 'admin@gmail.com', '', '2023-12-12 12:22:44');
