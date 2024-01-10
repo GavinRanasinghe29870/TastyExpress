@@ -22,3 +22,12 @@ CREATE TABLE `admin` (
 
 INSERT INTO `admin` (`adm_id`, `username`, `password`, `email`, `code`, `date`) VALUES
 (4, 'admin', 'adminadmin', 'admin@gmail.com', '', '2023-12-12 12:22:44');
+
+CREATE TABLE `dishes` (
+  `d_id` int(11) NOT NULL,
+  `rs_id` int(11) NOT NULL,
+  `title` varchar(222) NOT NULL,
+  `slogan` varchar(222) NOT NULL,
+  `price` decimal(10,2) NOT NULL,
+  `img` varchar(222) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1 COLLATE=latin1_swedish_ci;
