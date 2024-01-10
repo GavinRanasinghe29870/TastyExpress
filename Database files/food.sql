@@ -68,3 +68,9 @@ CREATE TABLE `res_category` (
   `c_name` varchar(222) NOT NULL,
   `date` timestamp NOT NULL DEFAULT current_timestamp() ON UPDATE current_timestamp()
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1 COLLATE=latin1_swedish_ci;
+
+INSERT INTO `res_category` (`c_id`, `c_name`, `date`) VALUES
+(5, 'Chinese ', '2023-12-12 14:26:15'),
+(6, 'Italian ', '2023-12-12 14:26:29'),
+(7, 'Indian ', '2023-12-12 14:26:39'),
+(8, 'Sri Lankan Food', '2023-12-12 15:07:41');
