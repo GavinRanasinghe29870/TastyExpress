@@ -115,3 +115,6 @@ ALTER TABLE `res_category`
 
 ALTER TABLE `users`
   ADD PRIMARY KEY (`u_id`);
+
+ALTER TABLE `users_orders`
+  ADD PRIMARY KEY (`o_id`);
