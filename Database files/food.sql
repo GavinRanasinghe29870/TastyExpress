@@ -109,3 +109,6 @@ ALTER TABLE `remark`
 
 ALTER TABLE `restaurant`
   ADD PRIMARY KEY (`rs_id`);
+
+ALTER TABLE `res_category`
+  ADD PRIMARY KEY (`c_id`);
