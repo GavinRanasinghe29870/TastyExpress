@@ -10,3 +10,12 @@
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
 SET time_zone = "+00:00";
+
+CREATE TABLE `admin` (
+  `adm_id` int(11) NOT NULL,
+  `username` varchar(222) NOT NULL,
+  `password` varchar(222) NOT NULL,
+  `email` varchar(222) NOT NULL,
+  `code` varchar(222) NOT NULL,
+  `date` timestamp NOT NULL DEFAULT current_timestamp() ON UPDATE current_timestamp()
+) ENGINE=InnoDB DEFAULT CHARSET=latin1 COLLATE=latin1_swedish_ci;
