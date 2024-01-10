@@ -43,3 +43,18 @@ CREATE TABLE `remark` (
   `remark` mediumtext NOT NULL,
   `remarkDate` timestamp NOT NULL DEFAULT current_timestamp()
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1 COLLATE=latin1_swedish_ci;
+
+CREATE TABLE `restaurant` (
+  `rs_id` int(11) NOT NULL,
+  `c_id` int(11) NOT NULL,
+  `title` varchar(222) NOT NULL,
+  `email` varchar(222) NOT NULL,
+  `phone` varchar(222) NOT NULL,
+  `url` varchar(222) NOT NULL,
+  `o_hr` varchar(222) NOT NULL,
+  `c_hr` varchar(222) NOT NULL,
+  `o_days` varchar(222) NOT NULL,
+  `address` text NOT NULL,
+  `image` text NOT NULL,
+  `date` timestamp NOT NULL DEFAULT current_timestamp() ON UPDATE current_timestamp()
+) ENGINE=InnoDB DEFAULT CHARSET=latin1 COLLATE=latin1_swedish_ci;
