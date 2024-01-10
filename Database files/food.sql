@@ -103,3 +103,6 @@ ALTER TABLE `admin`
 
 ALTER TABLE `dishes`
   ADD PRIMARY KEY (`d_id`);
+
+ALTER TABLE `remark`
+  ADD PRIMARY KEY (`id`);
