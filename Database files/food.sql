@@ -35,3 +35,11 @@ CREATE TABLE `dishes` (
 INSERT INTO `dishes` (`d_id`, `rs_id`, `title`, `slogan`, `price`, `img`) VALUES
 (18, 5, 'Festive Triple Chicken Feast', 'A succulent fusion of Creamy Cuttlefish & Prawns combined with Devilled Prawns, green chillies & onion, topped with delicious mozzarella', 2700.00, '657870df8cc89.jpg'),
 (19, 6, 'Chicken Kottu', 'A succulent fusion of Creamy Cuttlefish & Prawns combined with Devilled Prawns, green chillies & onion, topped with delicious mozzarella', 2000.00, '6578777d8454e.jpg');
+
+CREATE TABLE `remark` (
+  `id` int(11) NOT NULL,
+  `frm_id` int(11) NOT NULL,
+  `status` varchar(255) NOT NULL,
+  `remark` mediumtext NOT NULL,
+  `remarkDate` timestamp NOT NULL DEFAULT current_timestamp()
+) ENGINE=InnoDB DEFAULT CHARSET=latin1 COLLATE=latin1_swedish_ci;
