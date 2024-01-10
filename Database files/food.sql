@@ -58,3 +58,7 @@ CREATE TABLE `restaurant` (
   `image` text NOT NULL,
   `date` timestamp NOT NULL DEFAULT current_timestamp() ON UPDATE current_timestamp()
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1 COLLATE=latin1_swedish_ci;
+
+INSERT INTO `restaurant` (`rs_id`, `c_id`, `title`, `email`, `phone`, `url`, `o_hr`, `c_hr`, `o_days`, `address`, `image`, `date`) VALUES
+(5, 6, 'Pizza Hutt', 'pizzahutt@gmail.com', '011 111 111 9', 'pizzahutt.lk', '9am', '9pm', 'Mon-Sat', 'pizza hutt , dampe road\r\npitipana', '65786e7757d8a.png', '2023-12-12 14:30:15'),
+(6, 5, 'Mr.Kottu', 'mrlottu@gmail.com', '0759307059', 'mrkottu.lk', '9am', '10pm', 'Mon-Sat', '360/B sanasa road arachchikanda\r\narachchikanda', '65787729e634d.jpg', '2023-12-12 15:07:21');
