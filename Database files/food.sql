@@ -112,3 +112,6 @@ ALTER TABLE `restaurant`
 
 ALTER TABLE `res_category`
   ADD PRIMARY KEY (`c_id`);
+
+ALTER TABLE `users`
+  ADD PRIMARY KEY (`u_id`);
