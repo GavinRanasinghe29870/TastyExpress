@@ -98,3 +98,6 @@ CREATE TABLE `users_orders` (
   `date` timestamp NOT NULL DEFAULT current_timestamp() ON UPDATE current_timestamp()
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1 COLLATE=latin1_swedish_ci;
 
+ALTER TABLE `admin`
+  ADD PRIMARY KEY (`adm_id`);
+
