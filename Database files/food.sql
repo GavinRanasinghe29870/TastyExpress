@@ -118,3 +118,6 @@ ALTER TABLE `users`
 
 ALTER TABLE `users_orders`
   ADD PRIMARY KEY (`o_id`);
+
+ALTER TABLE `admin`
+  MODIFY `adm_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
