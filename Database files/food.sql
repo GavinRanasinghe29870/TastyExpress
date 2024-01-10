@@ -74,3 +74,16 @@ INSERT INTO `res_category` (`c_id`, `c_name`, `date`) VALUES
 (6, 'Italian ', '2023-12-12 14:26:29'),
 (7, 'Indian ', '2023-12-12 14:26:39'),
 (8, 'Sri Lankan Food', '2023-12-12 15:07:41');
+
+CREATE TABLE `users` (
+  `u_id` int(11) NOT NULL,
+  `username` varchar(222) NOT NULL,
+  `f_name` varchar(222) NOT NULL,
+  `l_name` varchar(222) NOT NULL,
+  `email` varchar(222) NOT NULL,
+  `phone` varchar(222) NOT NULL,
+  `password` varchar(222) NOT NULL,
+  `address` text NOT NULL,
+  `status` int(11) NOT NULL DEFAULT 1,
+  `date` timestamp NOT NULL DEFAULT current_timestamp() ON UPDATE current_timestamp()
+) ENGINE=InnoDB DEFAULT CHARSET=latin1 COLLATE=latin1_swedish_ci;
