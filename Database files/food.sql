@@ -101,3 +101,5 @@ CREATE TABLE `users_orders` (
 ALTER TABLE `admin`
   ADD PRIMARY KEY (`adm_id`);
 
+ALTER TABLE `dishes`
+  ADD PRIMARY KEY (`d_id`);
