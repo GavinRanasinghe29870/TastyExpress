@@ -110,3 +110,19 @@ else
         </nav>
 
     </header>
+    <div class="page-wrapper">
+
+
+
+<div class="inner-page-hero bg-image" data-image-src="images/img/pimg.jpg">
+    <div class="container"> </div>
+
+</div>
+<div class="result-show">
+    <div class="container">
+        <div class="row">
+
+
+        </div>
+    </div>
+</div>
